@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from NeuralNetwork import NeuralNetwork
 
 # Leer archivo CSV
-data = pd.read_csv(r'C:\Users\seiya\OneDrive\Escritorio\mushrooms.csv')
+data = pd.read_csv(r'data/mushrooms.csv')
 
 # Codificar datos categóricos
 data = pd.get_dummies(data)
@@ -80,3 +80,4 @@ print(f"La exactitud con la que se clasificaron los hongos fue de: {exactitud}")
 print(f"La precisión en la clasificación de los hongos fue de: {precision}")
 print(f"El recall en la clasificación de los hongos fue de: {recall}")
 print(f"El F1-Score en la clasificación de los hongos fue de: {f1}")
+
